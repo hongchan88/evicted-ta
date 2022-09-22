@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './styles.module.scss';
 import { GrFormNext } from 'react-icons/gr';
 import InfoBar from '../../component/InfoBar';
+import { Link } from 'react-router-dom';
 const Landing = (props) => {
   const infoText = [
     ['🗓', '18 August 6:00PM', 'to 19 August 1:00PM UTC + 10'],
@@ -53,9 +54,11 @@ const Landing = (props) => {
           </div>
         </div>
         <div className={styles.btnWrapper}>
-          <div className={styles.createEventBtn}>
-            <span>🎉 Create my event</span>
-          </div>
+          <Link to='/create' style={{ textDecoration: 'none' }}>
+            <div className={styles.createEventBtn}>
+              <span>🎉 Create my event</span>
+            </div>
+          </Link>
         </div>
       </section>
     </main>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './styles.module.scss';
 const Create = (props) => {
   return (
@@ -31,9 +32,11 @@ const Create = (props) => {
             </div>
           </div> */}
           <div className={styles.btnWrapper}>
-            <div className={styles.createEventBtn}>
-              <span>NEXT</span>
-            </div>
+            <Link to='/event' style={{ textDecoration: 'none' }}>
+              <div className={styles.createEventBtn}>
+                <span>NEXT</span>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
