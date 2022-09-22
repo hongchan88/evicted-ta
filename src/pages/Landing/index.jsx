@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './styles.module.scss';
 import { GrFormNext } from 'react-icons/gr';
+import InfoBar from '../../component/InfoBar';
 const Landing = (props) => {
   const infoText = [
     ['🗓', '18 August 6:00PM', 'to 19 August 1:00PM UTC + 10'],
@@ -31,18 +32,7 @@ const Landing = (props) => {
             </div>
             <div className={styles.infoContainer}>
               {infoText.map((info) => {
-                return (
-                  <div className={styles.infoWrapper}>
-                    <div className={styles.icon}>{info[0]}</div>
-                    <div className={styles.text}>
-                      <p>{info[1]}</p>
-                      <p>{info[2]}</p>
-                    </div>
-                    <div className={styles.arrowIcon}>
-                      <GrFormNext />
-                    </div>
-                  </div>
-                );
+                return <InfoBar info={info} />;
               })}
             </div>
           </div>
