@@ -11,6 +11,9 @@ main {
     background-color: #f6f2ff;
     .imgContainer {
       height: 40%;
+      img {
+        object-fit: cover;
+      }
     }
     .description {
       padding: 10px 30px;

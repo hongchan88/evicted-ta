@@ -6,7 +6,7 @@ const Create = (props) => {
     <main>
       <div className={styles.leftWrapper}>
         <div className={styles.imgContainer}>
-          <img src='/img/landingImg.png' width='100%' height='100%' />
+          <img src='/img/create2.jpg' width='100%' height='100%' />
         </div>
         <div className={styles.description}>
           <div>
@@ -22,15 +22,7 @@ const Create = (props) => {
             <label>Event photo</label>
             <input type='file' />
           </div>
-          {/* <div className={styles.inviteInfo}>
-            <div className={styles.text}>
-              <span>14 responses &#x2022; </span>
-              <span>see guests</span>
-            </div>
-            <div className={styles.btn}>
-              <span>🤝 Invite</span>
-            </div>
-          </div> */}
+
           <div className={styles.btnWrapper}>
             <Link to='/event' style={{ textDecoration: 'none' }}>
               <div className={styles.createEventBtn}>

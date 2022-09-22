@@ -25,7 +25,7 @@ const Landing = (props) => {
             <div className={styles.inviteInfo}>
               <div className={styles.text}>
                 <span>14 responses &#x2022; </span>
-                <span>see guests</span>
+                <span className={styles.guests}>see guests</span>
               </div>
               <div className={styles.btn}>
                 <span>🤝 Invite</span>
